@@ -1,0 +1,78 @@
+<nav th:fragment="menu-principal" class="navbar bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" th:href="@{/}">
+            jpa-empleos
+        </a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" th:href="@{/vacantes/indexPaginate}">
+                    Vacantes
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{/usuarios/index}">
+                    Usuarios
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Ingresar
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary" th:href="@{/form}">
+                    Registrarse
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary" href="#" th:href="@{/logout}">
+                    Salir
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<!--<nav th:fragment="menu-principal" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" th:href="@{/}">jpa-empleos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/vacantes/indexPaginate}">Vacantes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/categorias/indexPaginate}">Categorias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/usuarios/index}" >Usuarios</a>
+            </li>
+        </ul>
+        <a class="btn btn-primary" href="#">Ingresar</a>&nbsp;
+        <a class="btn btn-primary" th:href="@{/signup}">Registrarse</a>&nbsp;
+        <a class="btn btn-primary" th:href="@{/logout}">Salir</a>&nbsp;
+    </div>
+</nav>
+<nav  th:fragment="menu-principal" class="navbar bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+        </a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{/signup}">Registrar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" class="btn btn-primary" href="#" th:href="@{/logout}"> Login</a>
+            </li>                  
+        </ul>
+
+    </div>
+</nav>-->
